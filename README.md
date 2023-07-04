@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Widget Notification
 
-## Getting Started
+Este é um projeto que utiliza o pattern de Next.js com Tailwind CSS, React e o padrão de composição para criar um widget de notificação. O projeto está hospedado em [https://widget-notification.vercel.app/](https://widget-notification.vercel.app/) e pode ser acessado para visualizar o widget em ação.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+O widget de notificação implementado neste projeto possui as seguintes funcionalidades:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Exibe notificações em tempo real para os usuários.
+- As notificações são exibidas em um canto fixo da tela e podem ser fechadas pelo usuário.
+- As notificações podem ter diferentes tipos e níveis de importância.
+- As notificações são armazenadas em um estado global gerenciado pelo React Context API.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologias Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+O projeto utiliza as seguintes tecnologias e bibliotecas:
 
-## Learn More
+- Next.js: um framework React para criação de aplicativos web.
+- Tailwind CSS: uma biblioteca de utilitários CSS altamente configurável e de baixo nível.
+- React: uma biblioteca JavaScript para construir interfaces de usuário.
+- React Context API: uma API do React que permite compartilhar estado entre componentes sem a necessidade de passar props manualmente.
+- Socket.IO: uma biblioteca que permite a comunicação bidirecional em tempo real entre o servidor e o cliente.
 
-To learn more about Next.js, take a look at the following resources:
+## Instalação e Execução
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Para executar o projeto localmente, siga as etapas abaixo:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Certifique-se de ter o Node.js e o npm (ou yarn) instalados em seu sistema.
+2. Clone este repositório para o seu ambiente de desenvolvimento.
+3. Navegue até o diretório raiz do projeto.
+4. Execute o seguinte comando para instalar as dependências do projeto:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ou, se estiver usando o yarn:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   yarn
+   ```
+
+5. Após a conclusão da instalação das dependências, execute o seguinte comando para iniciar o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+   ou, com yarn:
+
+   ```bash
+   yarn dev
+   ```
+
+6. O servidor de desenvolvimento será iniciado e você poderá acessar o widget de notificação em seu navegador em [http://localhost:3000](http://localhost:3000).
+
+## Estrutura do Projeto
+
+A estrutura de diretórios do projeto é organizada da seguinte maneira:
+
+- A pasta `components` contém os componentes React reutilizáveis que compõem o widget de notificação.
+- A pasta `pages` contém as páginas do Next.js que são renderizadas no servidor ou no cliente.
+- A pasta `public` contém os arquivos estáticos, como a folha de estilo do Tailwind CSS.
+- O arquivo `next.config.js` é usado para configurações específicas do Next.js.
+- O arquivo `package.json` lista as dependências do projeto e contém comandos úteis para execução do projeto.
+- O arquivo `README.md` é o arquivo que você está lendo atualmente.
+
+## Contribuição
+
+Se você quiser contribuir para o projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request. Será um prazer receber suas sugestões e melhorias.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
