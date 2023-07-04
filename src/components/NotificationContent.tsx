@@ -1,7 +1,19 @@
 import React from 'react';
 import NotificationButton from './NotificationButton';
 
-const NotificationContent = ({ text, category, time, hasButtons }) => {
+interface NotificationContentProps {
+  text: string;
+  category: string;
+  time: string;
+  hasButtons: boolean;
+}
+
+const NotificationContent = ({
+  text,
+  category,
+  time,
+  hasButtons,
+}: NotificationContentProps) => {
   return (
     <>
       <div className="flex-1 flex flex-col gap-2">

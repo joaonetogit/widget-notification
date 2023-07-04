@@ -1,6 +1,10 @@
 import React from 'react';
 
-const WidgetHeader = ({ title }) => {
+interface WidgetHeaderProps {
+  title: string;
+}
+
+const WidgetHeader = ({ title }: WidgetHeaderProps) => {
   return (
     <div className=" bg-zinc-200 dark:bg-zinc-800 py-4 px-6 flex items-center justify-between">
       <span className="font-bold ">{title}</span>
