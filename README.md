@@ -18,8 +18,6 @@ O projeto utiliza as seguintes tecnologias e bibliotecas:
 - Next.js: um framework React para criação de aplicativos web.
 - Tailwind CSS: uma biblioteca de utilitários CSS altamente configurável e de baixo nível.
 - React: uma biblioteca JavaScript para construir interfaces de usuário.
-- React Context API: uma API do React que permite compartilhar estado entre componentes sem a necessidade de passar props manualmente.
-- Socket.IO: uma biblioteca que permite a comunicação bidirecional em tempo real entre o servidor e o cliente.
 
 ## Instalação e Execução
 
